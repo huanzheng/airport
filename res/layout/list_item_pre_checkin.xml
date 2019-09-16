@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/selector_bg_list_item">
+
+    <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/item_precheckin_image"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="132dp"
+            android:layout_height="118dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bg_picture_border"/>
+
+    <LinearLayout
+            android:id="@+id/item_precheckin_info"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/asset_info"
+                    android:text="@string/ID"/>
+
+            <TextView
+                    style="@style/asset_info.with_background"
+                    android:minLines="2"
+                    android:text="预入库时间"/>
+
+            <TextView
+                    style="@style/asset_info"
+                    android:text="@string/ast_info_name"/>
+
+            <TextView
+                    style="@style/asset_info.with_background"
+                    android:text="@string/ast_info_model"/>
+
+            <TextView
+                    style="@style/asset_info"
+                    android:text="@string/ast_info_quantity"/>
+
+            <TextView
+                    style="@style/asset_info.with_background"
+                    android:text="序列号"/>
+
+            <TextView
+                    style="@style/asset_info"
+                    android:text="@string/ast_info_control_type"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+            <EditText
+                    android:id="@+id/item_precheckin_id"
+                    style="@style/asset_info.with_normal_background"
+                    android:text="1098098778"/>
+
+            <EditText
+                    android:id="@+id/item_precheckin_time"
+                    style="@style/asset_info.with_background"
+                    android:text="2013年12月5号"
+                    android:minLines="2"/>
+
+            <EditText
+                    android:id="@+id/item_precheckin_name"
+                    style="@style/asset_info.with_normal_background"
+                    android:text="步进电机"/>
+
+            <EditText
+                    android:id="@+id/item_precheckin_model"
+                    style="@style/asset_info.with_background"
+                    android:text="W3D-1098789"/>
+
+            <EditText
+                    android:id="@+id/item_precheckin_quantity"
+                    style="@style/asset_info.with_normal_background"
+                    android:text="5"/>
+
+            <EditText
+                    android:id="@+id/item_precheckin_serial"
+                    style="@style/asset_info.with_background"
+                    android:text="CK1HJ8767"/>
+
+            <EditText
+                    android:id="@+id/item_precheckin_control_type"
+                    style="@style/asset_info.with_normal_background"
+                    android:text="管控备件"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/horizontal"
+            android:layout_below="@id/item_precheckin_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_separator_horizontal"/>
+
+    <LinearLayout
+            android:id="@+id/item_precheckinout_buttons"
+            android:layout_below="@id/horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/item_precheckin_markhandled"
+                style="@style/list_item_buttons"
+                android:text="@string/handle_pre_checkin"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_separator_vertical"/>
+
+        <Button
+                android:id="@+id/item_precheckin_checkin"
+                style="@style/list_item_buttons"
+                android:enabled="false"
+                android:textColor="@color/text_info_normal_bg"
+                android:text="@string/switch_to_formal_checkin"/>
+    </LinearLayout>
+</RelativeLayout>

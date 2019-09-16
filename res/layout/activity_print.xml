@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_normal">
+
+    <TextView
+            android:id="@+id/activity_print_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择要使用的打印机"/>
+
+    <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_print_buttons">
+
+        <Button
+                android:text="开始打印"
+                android:id="@+id/activity_print_print"
+                style="@style/button_bottom_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                />
+
+        <Button
+                android:text="停止打印"
+                android:id="@+id/activity_print_stop"
+                style="@style/button_bottom_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:visibility="gone"
+                />
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listView1"
+            android:layout_below="@id/activity_print_title"
+            android:layout_above="@id/activity_print_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+</RelativeLayout>

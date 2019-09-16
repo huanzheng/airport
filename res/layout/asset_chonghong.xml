@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="2dp"
+              android:paddingRight="2dp"
+              android:background="@android:color/transparent">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/input_linearlayout">
+
+            <TextView
+                    android:id="@+id/chonghong_quantitiy"
+                    style="@style/input_textview"
+                    android:text="@string/chonghong_quantity"/>
+
+            <EditText
+                    android:id="@+id/ast_chonghong_quantity"
+                    style="@style/input_edittext"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:hint="@string/must_be_negative"/>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/input_linearlayout">
+
+            <TextView
+                    style="@style/input_textview"
+                    android:text="库位条码"/>
+
+            <EditText
+                    android:id="@+id/ast_chonghong_location_barcode"
+                    style="@style/input_edittext"
+                    android:hint="@string/or_location_name"/>
+        </LinearLayout>
+
+        <!--
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="或者"
+                        android:paddingLeft="38dp"
+                        android:textSize="10sp"
+                        />-->
+
+        <LinearLayout
+                style="@style/input_linearlayout">
+
+            <TextView
+                    style="@style/input_textview"
+                    android:text="库位名称"/>
+
+            <EditText
+                    android:id="@+id/ast_chonghong_location_name"
+                    style="@style/input_edittext"
+                    android:hint="@string/or_location_barcode"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

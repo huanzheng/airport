@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_normal">
+
+    <TextView
+            style="@style/title_bar"
+            android:id="@+id/aty_search_result_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/search_result"/>
+
+    <ListView
+            android:id="@+id/aty_search_result_list"
+            android:layout_below="@id/aty_search_result_title"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/list_item_asset_info"
+            android:divider="@null"/>
+</RelativeLayout>

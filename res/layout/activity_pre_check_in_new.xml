@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_normal">
+
+    <TextView
+            style="@style/title_bar"
+            android:id="@+id/aty_pre_check_in_out_new_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/pre_check_in"/>
+
+    <LinearLayout
+            android:id="@+id/aty_pre_checkin_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <Button
+                style="@style/button_bottom_bar"
+                android:id="@+id/aty_pre_check_in_new_checkin"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:text="@string/pre_check_in"/>
+
+        <Button
+                style="@style/button_bottom_bar"
+                android:id="@+id/aty_pre_check_in_new_cancel"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_button_blue"
+                android:text="@string/cancel"/>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/aty_pre_check_in_out_new_title"
+            android:layout_above="@id/aty_pre_checkin_buttons">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:id="@+id/aty_check_without_barcode_asset_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <include
+                        layout="@layout/asset_check_in_without_barcode">
+                </include>
+
+                <ImageView
+                        style="@style/asset_new_image"
+                        android:id="@+id/asset_pre_checkin_image"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/aty_check_without_barcode_check_in"
+                    android:layout_below="@id/aty_check_without_barcode_asset_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <include
+                        layout="@layout/asset_check_in">
+                </include>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

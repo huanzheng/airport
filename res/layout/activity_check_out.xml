@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_normal">
+
+    <TextView
+            style="@style/title_bar"
+            android:id="@+id/aty_checkout_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/check_out"/>
+
+    <LinearLayout
+            android:id="@+id/aty_checkout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <Button
+                style="@style/button_bottom_bar"
+                android:id="@+id/aty_checkout_checkout"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:text="@string/checkout_button"/>
+
+        <Button
+                style="@style/button_bottom_bar"
+                android:id="@+id/aty_checkout_cancel"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:text="@string/cancel"/>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/aty_checkout_title"
+            android:layout_above="@id/aty_checkout_buttons">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:id="@+id/aty_check_with_barcode_asset_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <FrameLayout
+                        android:id="@+id/asset_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+                <!--<include
+                        layout="@layout/asset_info">
+                </include>-->
+                <ImageView
+                        style="@style/asset_new_image"
+                        android:id="@+id/asset_new_image"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/aty_check_with_barcode_check_in"
+                    android:layout_below="@id/aty_check_with_barcode_asset_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <include
+                        layout="@layout/asset_check_out">
+                </include>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

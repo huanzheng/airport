@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/selector_bg_list_item">
+
+    <LinearLayout
+            android:id="@+id/item_precheckin_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="2dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/asset_info"
+                    android:text="库位名称"/>
+
+            <TextView
+                    style="@style/asset_info.with_background"
+                    android:text="库位条码"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/location_name"
+                    style="@style/asset_info"
+                    android:text="Location"/>
+
+            <TextView
+                    android:id="@+id/location_barcode"
+                    style="@style/asset_info.with_background"
+                    android:text="2013年12月5号"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

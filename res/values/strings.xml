@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">机场备件管理系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!--ActivityLogin-->
+    <string name="aty_login_main_name">备件管理系统</string>
+    <string name="aty_login_user">用户名</string>
+    <string name="aty_login_passwd">密码</string>
+    <string name="aty_login_login">登陆</string>
+    <string name="aty_login_version_number">V0.1</string>
+    <string name="login_need_input">用户名或密码不能为空</string>
+    <string name="login_login_in_progress">登录中</string>
+    <string name="login_welcome_back">欢迎回来</string>
+    <string name="login_retrieving_user_info">获取用户信息</string>
+
+    <!--ActivityEntry-->
+    <string name="check_in">正式入库</string>
+    <string name="check_out">正式出库</string>
+    <string name="pre_check_in">预入库</string>
+    <string name="pre_check_out">预出库</string>
+    <string name="aty_entry_records_pre_checkin">预入库记录</string>
+    <string name="aty_entry_records_pre_checkout">预出库记录</string>
+    <string name="generate_checkout_task">生成出库任务</string>
+    <string name="take_checkout_task">领取出库任务</string>
+    <string name="move">移库</string>
+    <string name="correct">冲红</string>
+    <string name="search_component">备件查询</string>
+    <string name="aty_entry_example_name">小刘</string>
+    <string name="aty_entry_example_user_type">仓库管理员</string>
+    <string name="progress_title_op_in_progress">操作中</string>
+
+    <!--AcitivityConfig-->
+    <string name="aty_config_http">HTTP协议</string>
+    <string name="aty_config_ip">服务器地址</string>
+    <string name="aty_config_port">服务器端口</string>
+    <string name="aty_config_rootpath">服务器路径</string>
+    <string name="aty_config_config">确定</string>
+    <string name="config_need_value">配置均需有值</string>
+    <string name="config_need_http">HTTP值无效，需http或者https</string>
+    <string name="config_need_port">端口值无效，需是数字</string>
+    <string name="config_need_period">更新间隔无效，需是数字</string>
+
+    <!--AirportBaseActivity-->
+    <string name="err_no_access_right">无访问权限，请重新登录</string>
+    <string name="err_connection_problem">网络问题，请检查服务器配置</string>
+    <string name="network_response_code">服务器返回值</string>
+    <string name="err_error">错误</string>
+    <string name="ast_info_barcode">条码</string>
+    <string name="ast_info_name">名称</string>
+    <string name="ast_info_model">型号</string>
+    <string name="ast_info_quantity">数量</string>
+    <string name="ast_info_location_barcode">位置条码</string>
+    <string name="ast_info_location_name">位置名称</string>
+    <string name="ast_info_control_type">类型</string>
+    <string name="ast_info_serial">序列号</string>
+    <string name="ast_info_price">价格</string>
+    <string name="ast_info_order_code">采购代码</string>
+    <string name="ast_info_in_quantitiy">库内数量</string>
+    <string name="ast_info_total_quantity">总库存</string>
+    <string name="ast_info_pc_per_pack">每包数量</string>
+
+
+    <string name="info_pls_input_name">请输入名称</string>
+    <string name="info_pls_input_model">请输入型号</string>
+    <string name="info_pls_input_serial">请输入批次</string>
+    <string name="info_pls_input_price">请输入价格</string>
+    <string name="info_price_must_be_number">价格必须是数字</string>
+    <string name="info_pls_input_ordercode">请输入采购代码</string>
+    <string name="info_pls_input_pcs_per_pack">请输入每包数量</string>
+    <string name="info_pcs_per_pack_must_be_number">每包数量需是整数</string>
+    <string name="info_pls_input_checkin_quantity">请输入入库数量</string>
+    <string name="info_checkin_number_must_be_number">入库数量需是整数</string>
+    <string name="info_pls_input_l_barcode_or_name">需输入入库位置条码或者入库位置名称</string>
+    <string name="controlled_asset">管制备件</string>
+    <string name="none_controlled_asset">非管制备件</string>
+
+
+    <string name="searching">搜索中</string>
+    <string name="asset_barcode">备件条形码</string>
+    <string name="location_barcode">库位条形码</string>
+    <string name="pls_input_at_least_one_info">请至少输入一项信息</string>
+    <string name="cannot_find_assets">仓库中没有找到相关备件</string>
+    <string name="search_result">搜索结果</string>
+    <string name="aty_srch_norelt_checkin_new">入库新配件</string>
+    <string name="aty_srch_norelt_precheckin">继续预入库</string>
+    <string name="barcode">条码</string>
+    <string name="asset_name">备件名称</string>
+    <string name="asset_model">备件型号</string>
+    <string name="uploading_checkin_info">上传入库信息中</string>
+    <string name="loading">加载中</string>
+    <string name="checkout_add_pic">添加故障点照片</string>
+    <string name="checkout_number">出库数量</string>
+    <string name="cancel">取消</string>
+    <string name="checkout_button">出库</string>
+    <string name="aty_checkout_quantity_invalid">出库数量需是整数</string>
+    <string name="uploading_checkout_info">上传出库记录中</string>
+    <string name="uploading_move_info">上传移库记录中</string>
+    <string name="aty_move_pls_input_new_location_barcode">请输入新库位条码</string>
+    <string name="aty_move_must_be_number">移库数量需为数字</string>
+    <string name="aty_move_pls_input_move_number">请输入移库数量</string>
+    <string name="check_in_button">入库</string>
+    <string name="uploading_pre_checkin_info">上传预入库信息中</string>
+    <string name="pls_input_pre_checkin_num">请输入预入库数量</string>
+    <string name="pre_check_in_number_must_be_number">预入库数量需是数字</string>
+    <string name="add_pic">添加照片</string>
+    <string name="pre_checkin_number">预入库数量</string>
+    <string name="pre_checkout_number">预出库数量</string>
+    <string name="uploading_pre_checkout_info">上传预出库信息中</string>
+    <string name="pls_input_precheckout_number">请输入预出库数量</string>
+    <string name="pre_checkout_number_must_be_number">预出库数量需是数字</string>
+    <string name="creating_checkout_task">生成出库任务中</string>
+    <string name="number_cannot_be_negative">数量不能为负</string>
+    <string name="upload_pic">上传照片</string>
+    <string name="pls_add_pic_first">请先添加图片</string>
+    <string name="uploading_pic_in_progress">上传图片中</string>
+    <string name="err_sdcard_issue">SD卡无法写入</string>
+    <string name="pls_checkin_before_upload_pic">请先入库再上传图片</string>
+    <string name="upload_pic_succeeded">图片上传成功</string>
+    <string name="pls_add_checkout_pic">请先添加故障点照片</string>
+    <string name="pls_upload_pic_precheckin_first">请先添加预入库照片</string>
+    <string name="upload_pic_precheckin_succeeded">上传预入库图片成功</string>
+    <string name="pls_add_pic_precheckout_first">请先添加预出库照片</string>
+    <string name="upload_pic_precheckout_succeeded">上传预出库图片成功</string>
+    <string name="no_blank">必填</string>
+    <string name="or_location_barcode">或库位条码</string>
+    <string name="or_location_name">或库位名称</string>
+    <string name="ID">记录号</string>
+    <string name="pre_checkin_records">预入库记录</string>
+    <string name="pre_checkout_records">预出库记录</string>
+    <string name="pre_checkin_handle_inprogress">预入库记录处理中</string>
+    <string name="pre_checkout_handle_inprogress">预出库记录处理中</string>
+    <string name="checkout_tasks_title">出库任务列表</string>
+    <string name="handle_checkout_task_inprogress">处理出库任务中</string>
+    <string name="upload_checkout_pic_succeeded">上传故障点照片成功</string>
+
+    <string name="ok">确认</string>
+    <string name="warning">警告</string>
+    <string name="dialog_message">确认此操作吗？</string>
+    <string name="aty_srch_norelt_precheckout">继续预出库</string>
+    <string name="handle_pre_checkin">处理预入库</string>
+    <string name="switch_to_formal_checkin">转正式入库</string>
+    <string name="handle_pre_checkout">处理预出库</string>
+    <string name="switch_to_formal_checkout">转正式出库</string>
+    <string name="check_in_quantity">入库数量</string>
+    <string name="check_out_quantity">出库数量</string>
+    <string name="aty_config_period">地址更新间隔</string>
+    <string name="chonghong_quantity">冲红数量</string>
+    <string name="must_be_negative">必填，需为负数</string>
+    <string name="chonghong_checkin">入库冲红</string>
+    <string name="chonghong_checkout">出库冲红</string>
+    <string name="chonghong_must_be_negetive">冲红数量需为负数</string>
+    <string name="uploading_chonghong_info">上传冲红信息中</string>
+    <string name="pls_input_chonghong_quantity">请输入冲红数量</string>
+    <string name="laiyuan">来源</string>
+    <string name="pici">批次</string>
+    <string name="beizhu">备注</string>
+</resources>

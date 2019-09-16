@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_normal">
+
+    <Button
+            style="@style/button_entry"
+            android:id="@+id/aty_search_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/selector_button_main_blue"
+            android:text="搜索"/>
+
+    <EditText
+            android:id="@+id/aty_search_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/selector_edit_text_search"
+            android:hint="输入库位名称或者库位条码"
+            android:textColorHint="@android:color/secondary_text_light"
+            android:paddingLeft="6dp"/>
+
+    <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/selector_button_search"
+            android:layout_alignRight="@id/aty_search_barcode"/>
+    <!--
+        <LinearLayout
+                android:id="@+id/aty_search_title"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aty_search_barcode"
+                android:layout_marginTop="16dp">
+
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_separater_h"/>
+
+            <TextView
+                    style="@style/text_entry"
+                    android:textSize="16sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="高级搜索"
+                    android:gravity="center"/>
+
+            <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_separater_h"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_below="@id/aty_search_title"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="备件名称"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:id="@+id/aty_search_asset_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_edit_text"/>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="或者"
+                    android:paddingLeft="38dp"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="备件型号"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"/>
+
+                <EditText
+                        android:id="@+id/aty_search_asset_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_edit_text"/>
+            </LinearLayout>
+        </LinearLayout>-->
+</RelativeLayout>

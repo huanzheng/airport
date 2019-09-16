@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+            style="@style/input_linearlayout"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ast_check_out_add_pic">
+
+        <TextView
+                style="@style/input_textview"
+                android:text="@string/checkout_number"/>
+
+        <EditText
+                android:id="@+id/ast_checkouttask_quantity"
+                style="@style/input_edittext"
+                android:layout_width="180dp"
+                android:inputType="numberDecimal"
+                android:hint="@string/no_blank"/>
+    </LinearLayout>
+</RelativeLayout>

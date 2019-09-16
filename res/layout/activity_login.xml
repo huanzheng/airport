@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_login">
+
+    <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/aty_login_main_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher"
+                android:layout_margin="8dp"/>
+
+        <TextView
+                android:id="@+id/aty_login_main_name"
+                android:layout_toRightOf="@id/aty_login_main_logo"
+                android:layout_alignTop="@id/aty_login_main_logo"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aty_login_main_name"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aty_login_version_number"
+                android:layout_below="@id/aty_login_main_name"
+                android:layout_alignLeft="@id/aty_login_main_name"
+                android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <TextView
+                    android:text="@string/aty_login_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:id="@+id/aty_login_user_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_edit_text"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textNoSuggestions"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <TextView
+                    android:text="@string/aty_login_passwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:id="@+id/aty_login_passwd"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/selector_edit_text"
+                    android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            <Button
+                    android:id="@+id/aty_login_login"
+                    style="@style/text_entry"
+                    android:text="@string/aty_login_login"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_button_blue"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

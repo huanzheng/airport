@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_normal">
+
+    <TextView
+            android:id="@+id/aty_search_result_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/search_result"
+            style="@style/title_bar"/>
+
+    <LinearLayout
+            android:id="@+id/aty_search_noresult_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:orientation="horizontal">
+
+        <Button
+                style="@style/button_bottom_bar"
+                android:id="@+id/aty_search_noresult_research"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:text="重新搜索"/>
+
+        <Button
+                style="@style/button_bottom_bar"
+                android:id="@+id/aty_aty_search_noresult_checkin_new"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:text="入库新备件"/>
+    </LinearLayout>
+
+    <TextView
+            android:layout_below="@id/aty_search_result_title"
+            android:layout_above="@id/aty_search_noresult_buttons"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="@string/cannot_find_assets"/>
+</RelativeLayout>

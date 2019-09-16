@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_item_with_menu">
+
+    <RelativeLayout
+            android:id="@+id/l_i_asset_infos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include
+                layout="@layout/item_asset_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_below="@id/l_i_asset_infos"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            >
+
+        <Button
+                android:id="@+id/list_item_check_in"
+                style="@style/list_item_buttons"
+                android:text="正式入库"
+                android:visibility="gone"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_separator_vertical"
+                android:visibility="gone"/>
+
+          <!-- <Button
+                android:id="@+id/list_item_check_out"
+                style="@style/list_item_buttons"
+                android:enabled="false"
+                android:textColor="@color/text_info_normal_bg"
+                android:text="正式出库"/> -->
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_separator_vertical"/>
+
+        <Button
+                android:id="@+id/list_item_pre_checkin"
+                style="@style/list_item_buttons"
+                android:text="预入库"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_separator_vertical"/>
+
+        <Button
+                android:id="@+id/list_item_pre_checkout"
+                style="@style/list_item_buttons"
+                android:text="预出库"/>
+    </LinearLayout>
+</RelativeLayout>

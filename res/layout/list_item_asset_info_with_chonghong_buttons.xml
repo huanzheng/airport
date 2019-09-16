@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_item_with_menu">
+
+    <RelativeLayout
+            android:id="@+id/l_i_asset_infos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include
+                layout="@layout/item_asset_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_below="@id/l_i_asset_infos"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            >
+
+        <Button
+                android:id="@+id/list_item_checkin_chonghong"
+                style="@style/list_item_buttons"
+                android:text="入库冲红"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_separator_vertical"/>
+
+        <Button
+                android:id="@+id/list_item_checkout_chonghong"
+                style="@style/list_item_buttons"
+                android:text="出库冲红"/>
+    </LinearLayout>
+</RelativeLayout>

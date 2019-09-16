@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="2dp"
+              android:paddingRight="2dp"
+              android:background="@android:color/transparent">
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+        <LinearLayout
+                style="@style/input_linearlayout">
+
+            <TextView
+                    android:id="@+id/label_quantitiy"
+                    style="@style/input_textview"
+                    android:text="@string/check_in_quantity"/>
+
+            <EditText
+                    android:id="@+id/ast_check_in_input_quantity"
+                    style="@style/input_edittext"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/no_blank"/>
+        </LinearLayout>
+
+        <LinearLayout
+                style="@style/input_linearlayout">
+
+            <TextView
+                    style="@style/input_textview"
+                    android:text="库位条码"/>
+
+            <EditText
+                    android:id="@+id/ast_check_in_input_location_barcode"
+                    style="@style/input_edittext"
+                    android:hint="@string/or_location_name"/>
+        </LinearLayout>
+
+        <!--
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="或者"
+                        android:paddingLeft="38dp"
+                        android:textSize="10sp"
+                        />-->
+
+        <LinearLayout
+                style="@style/input_linearlayout">
+
+            <TextView
+                    style="@style/input_textview"
+                    android:text="库位名称"/>
+
+            <EditText
+                    android:id="@+id/ast_check_in_input_location_name"
+                    style="@style/input_edittext"
+                    android:hint="@string/or_location_barcode"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+        <Button
+                android:layout_weight="1.0"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="@string/add_pic"
+                android:id="@+id/add_pic"
+                style="@style/button_take_photo"/>
+
+        <Button
+                style="@style/button_take_photo"
+                android:layout_weight="1.0"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:text="@string/upload_pic"
+                android:id="@+id/upload_pic"/>
+
+    </LinearLayout>
+
+</LinearLayout>

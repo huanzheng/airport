@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <Button
+            style="@style/button_take_photo"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp"
+            android:layout_width="85dp"
+            android:text="@string/add_pic"
+            android:id="@+id/ast_pre_checkout_add_pic"/>
+
+    <LinearLayout
+            style="@style/input_linearlayout"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ast_pre_checkout_add_pic">
+
+        <TextView
+                style="@style/input_textview"
+                android:text="@string/pre_checkout_number"/>
+
+        <EditText
+                android:id="@+id/ast_pre_checkout_quantity"
+                style="@style/input_edittext"
+                android:inputType="numberDecimal"
+                android:hint="@string/no_blank"/>
+    </LinearLayout>
+</RelativeLayout>
